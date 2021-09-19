@@ -1,0 +1,578 @@
+:root {
+    --white: #fff;
+    --black: #171717;
+    --cyan: #00f5ff;
+    --lightblack: #202020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.particle-container {
+    width: 100%;
+}
+
+#particlejs {
+    background: var(--black);
+    width: 100%;
+    height: 90vh;
+}
+
+.container-hero {
+    position: relative;
+}
+
+.careers,
+.aboutUs,
+.blogs,
+.bvc {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.careers div,
+.blogs div,
+.bvc div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    z-index: 0;
+}
+
+.main .typing {
+    width: 90%;
+    margin: 1rem auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.typingEffect {
+    font-size: 25px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+}
+
+.images {
+    display: flex;
+    overflow-y: hidden;
+}
+
+.images img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide {
+    width: 80vw;
+    height: 100vh;
+    margin: 0rem 10rem;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border: 1px solid;
+}
+
+
+/* wrapper containing our slides */
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top right;
+    overflow-y: hidden;
+}
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+.line {
+    line-height: 8px;
+}
+
+.line-1 {
+    width: 15px;
+    height: 15px;
+    background: var(--cyan);
+    display: inline-block;
+}
+
+.line-2 {
+    width: 80px;
+    height: 1px;
+    background: var(--cyan);
+    display: inline-block;
+}
+
+.line-3 {
+    width: 60px;
+    height: 1px;
+    background: var(--cyan);
+    display: inline-block;
+}
+
+.typing {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.typing h1 {
+    font-size: 80px;
+    font-weight: normal;
+    text-align: left;
+    font-family: 'Righteous', cursive;
+    line-height: 1;
+}
+
+.typingEffect {
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+    color: var(--cyan);
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: transparent;
+    font-weight: bold;
+    border: 2px dashed var(--black);
+}
+
+.uniqueness {
+    padding-bottom: 3rem;
+    background: var(--white)!important;
+    color: var(--black)!important;
+}
+
+.bg-cyan {
+    background: var(--cyan);
+}
+
+.aboutUs {
+    background: #fff!important;
+}
+
+.features,
+.careers,
+.aboutUs,
+.blogs,
+.bvc {
+    position: relative;
+    z-index: 0;
+}
+
+.careers,
+.bvc {
+    background: lightgoldenrodyellow;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+
+/* Uniqueness */
+
+.unique-card {
+    scale: 1;
+}
+
+.unique-card:hover {
+    scale: 1.2;
+}
+
+.accord {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+
+.accordion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0rem 2rem;
+    width: 100%;
+    transition: all 1s ease-in;
+}
+
+.accordion-item {
+    margin: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px #bcc4c4;
+    transition: all 1s ease;
+}
+
+.accordion-title {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: all 1s ease-in;
+}
+
+.accordion-title:nth-child(2) {
+    color: var(--cyan);
+}
+
+.accordion-content {
+    padding: 1rem;
+}
+
+
+/* Features */
+
+.features {
+    padding: 0rem;
+    background: #222;
+}
+
+.features h1 {
+    color: var(--white);
+}
+
+.cards-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    background: transparent!important;
+    margin: 5px 0;
+    border: 1px solid #D8D8D8;
+    box-shadow: 1px 1px 10px #D8D8D8;
+}
+
+.card {
+    text-align: left;
+    background: transparent;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    transition: transform .2s ease-in-out;
+    vertical-align: top;
+    padding: 25px;
+    margin: 1.5rem 0;
+    z-index: 0;
+}
+
+.card-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
+    transition: all .5s ease;
+    border: none;
+    background: var(--white);
+    padding: 1rem;
+}
+
+.card-item:hover {
+    box-shadow: 0px 3px 55px rgba(0, 0, 0, .5);
+}
+
+.card .title {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.card-item h2 {
+    font-size: 1rem;
+}
+
+.card .desc {
+    font-size: 14px;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+.card img {
+    display: block;
+    position: relative;
+    width: 30px;
+}
+
+.swiper-container {
+    height: 17rem;
+}
+
+.swiper-pagination-bullet {
+    background: var(--white)!important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--cyan)!important;
+}
+
+.slider-btn {
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    color: var(--white)!important;
+    width: 45px;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    position: absolute;
+    z-index: 999;
+    transition: all 0.6s ease 0s;
+}
+
+.slider-btn:hover {
+    color: var(--white)!important;
+    background: var(--cyan)!important;
+}
+
+.btn-r {
+    right: 0;
+}
+
+.btn-l {
+    left: 0px;
+}
+
+.careers {
+    background: url(https://image.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bvc {
+    background: black;
+    border-top: 2px dotted var(--cyan);
+    padding: 1rem 0;
+    color: white;
+}
+
+.bvc h3 {
+    font-size: 24px;
+}
+
+.bvc h3 span {
+    color: var(--cyan);
+}
+
+.bvc div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+.bvc .btn {
+    background: transparent;
+    color: var(--cyan);
+    border: 2px solid var(--cyan);
+    transition: all .2s linear;
+}
+
+.bvc .btn:hover {
+    background: var(--cyan);
+    color: var(--black);
+    border: 2px solid var(--black);
+    transition: all .2s linear;
+}
+
+.bg-custom {
+    background: #0c2315;
+}
+
+footer .img-header {
+    width: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+    .particles {
+        display: block;
+        width: 100%;
+        height: 90vh;
+    }
+    .main {
+        color: black;
+        background: var(--white)!important;
+        width: 100%;
+    }
+    .main div {
+        padding: 5px;
+        width: 90%;
+        left: 0%;
+        top: 15%;
+        margin: 1rem;
+        transform: translate(0, 0);
+    }
+    .typing {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 15vh;
+    }
+    .typing h1 {
+        font-size: 3rem;
+    }
+    .typing .typingEffect {
+        padding: 0px;
+        margin: 0rem;
+        font-size: 1rem;
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        color: var(--cyan)!important;
+    }
+    .typingEffect div {
+        margin: 0;
+        height: 20px;
+    }
+    .typingEffect span {
+        display: none!important;
+    }
+    .uniqueness {
+        margin: 0rem;
+        padding: 2rem 1rem;
+        padding-bottom: 3rem;
+        background: var(--white)!important;
+        color: var(--black)!important;
+    }
+    .uniqueness h1 {
+        margin-bottom: 1rem;
+    }
+    .accord {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .accordion {
+        padding: 5px;
+        width: 100%;
+        margin: 2.5px;
+        margin-top: -1rem;
+    }
+    .accordion-item {
+        margin: .5rem 0;
+        padding: 0 .5rem;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+    }
+    .accordion-item:hover {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    }
+    .accordion-title {
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    .features {
+        margin: 0;
+        padding: 1rem 0;
+        height: 70vh;
+    }
+    .feature-container {
+        padding: 0;
+    }
+    .features-header {
+        margin: 1rem;
+    }
+    .feature-header,
+    .about-header {
+        margin-bottom: 15px;
+    }
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+    }
+    .features .card {
+        width: inherit;
+    }
+    .aboutUs {
+        margin: 3rem 0;
+        margin-bottom: 1rem;
+        height: auto;
+        text-align: left;
+        background: #fff!important;
+    }
+    .about-container {
+        padding: 0rem;
+    }
+    .about-container .leading-relaxed {
+        padding: 1rem;
+        text-align: left;
+    }
+    .bvc div {
+        top: 25%;
+        left: 0%;
+        padding: 1rem;
+        transform: translate(0, 0);
+    }
+    footer .container {
+        padding: 3rem 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .uniqueness {
+        padding-bottom: 0rem;
+    }
+    .aboutUs {
+        height: auto;
+    }
+    .about-container {
+        margin: 1rem 2.75rem;
+    }
+    .bvc {
+        height: 90vh;
+    }
+    footer {
+        display: block;
+    }
+}

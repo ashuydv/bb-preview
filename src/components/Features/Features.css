@@ -1,0 +1,27 @@
+.features-container {
+    width: 100%;
+    background: var(--black);
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+p {
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.feature-card {
+    background: #000;
+    border: 2px double transparent;
+    box-shadow: 0px 3px 55px rgba(0, 0, 0, .15);
+    transition: border .3s;
+}
+
+.feature-card:hover {
+    border: 2px double cyan;
+}
